@@ -1,5 +1,5 @@
 package com.example.savethem;
-//this class should be replaces by database, but it is used instead
+
 abstract class spieces
 {
     protected int id;
