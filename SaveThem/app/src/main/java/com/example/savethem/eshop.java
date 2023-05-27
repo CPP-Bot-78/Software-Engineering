@@ -3,7 +3,7 @@ package com.example.savethem;
 public class eshop
 {
     private int productId;
-    private int[] wishlist; // product id will be added
+    private List<int> wishList = new ArrayList<int>; // product id will be added
 
     public eshop(int productId,int[] wishlist)
     {
@@ -17,8 +17,8 @@ public class eshop
     }
     //getters
     public int getProductId() { return productId; }
-    public int getWishlist() { return productId; }
+    public List<int> getWishlist() { return wishList; }
     //setters
     public void setProductId(int productId) {this.productId=productId;}
-    public void setWishlist(int[] wishlist) {this.wishlist=wishlist;}
+    public void addWishListItem(int productId) {this.wishlist.add(productId);}
 }
