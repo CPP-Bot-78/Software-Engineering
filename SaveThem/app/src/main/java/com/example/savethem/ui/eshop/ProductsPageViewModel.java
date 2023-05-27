@@ -6,5 +6,14 @@ import androidx.lifecycle.ViewModel;
 
 public class ProductsPageViewModel extends ViewModel
 {
+    private final MutableLiveData<String> mText;
 
+    public HomeViewModel() {
+        mText = new MutableLiveData<>();
+        mText.setValue("This is home fragment");
+    }
+
+    public LiveData<String> getText() {
+        return mText;
+    }
 }
