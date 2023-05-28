@@ -45,7 +45,7 @@ public class qr
    
     public boolean openCamera()
     {
-        
+        return false;
     }
 
     public static String getURLfromQR(String pngFilePath)
