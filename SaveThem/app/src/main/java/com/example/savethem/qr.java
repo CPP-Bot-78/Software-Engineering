@@ -23,6 +23,9 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
 public class qr
 {
+
+    private String link;
+
     private static String readQR(String path, String charset, Map hashMap) throws FileNotFoundException, IOException, NotFoundException
     {
         BinaryBitmap binaryBitmap = new BinaryBitmap(
@@ -47,8 +50,9 @@ public class qr
         String charset = "UTF-8";
         Map<EncodeHintType, ErrorCorrectionLevel> hashMap = new HashMap<EncodeHintType,ErrorCorrectionLevel>();
         hashMap.put(EncodeHintType.ERROR_CORRECTION,ErrorCorrectionLevel.L);
-
-        return readQR(pngFilePath, charset, hashMap);
+        String link = readQR(pngFilePath, charset, hashMap);
+        this.link = link;
+        return link;
     }
  
 }
