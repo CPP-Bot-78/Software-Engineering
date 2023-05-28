@@ -1,6 +1,6 @@
 package com.example.savethem;
 
-public class spieces
+public class species
 {
     protected int id;
     protected int popularity;
@@ -9,7 +9,7 @@ public class spieces
     protected String location;
     protected String animalType;
 
-    public spieces(int id, int popularity, String name, String description, String location, String animalType)
+    public species(int id, int popularity, String name, String description, String location, String animalType)
     {
         this.id=id;
         this.popularity=popularity;
@@ -25,6 +25,11 @@ public class spieces
     public String getDescription() {return description;}
     public String getLocation() {return location;}
     public String getAnimalType() {return animalType;}
+
+    public void addEntry()
+    {
+
+    }
 
 }
 

@@ -15,7 +15,18 @@ public class loggedInUser {
         this.lastName=lastName;
         this.email=email;
         this.otherInfo=otherInfo;
+        this.livingLocation=livingLocation;
     }
 
+    public String getUserEmail()
+    {return email;}
 
+    public int getUserId()
+    {return id;}
+
+    public String getUserFirstName()
+    {return firstName;}
+
+    public String getUserLastName()
+    {return lastName;}
 }
