@@ -26,12 +26,18 @@ public class species
     public String getLocation() {return location;}
     public String getAnimalType() {return animalType;}
 
-    public void addEntry()
+    //unfinished
+    public void loadSpeciesDetails(species x)
     {
-
+        x.getId();
+        x.getAnimalType();
+        x.getDescription();
     }
 
+
+
 }
+
 
 
 

@@ -1,25 +1,13 @@
 package com.example.savethem;
 
 public class ErrorPage {
+    private String errorMessage;
 
+    public ErrorPage(String message)
+    {this.errorMessage=message;}
 
-
-
-
-
-public void showError1() {
-
-    System.out.println("Error_1 message.")
-
+    public void showError()
+    {
+        System.out.println("Συγγνώμη, κάτι δεν λειτούργησε όπως θα έπρεπε. Μήνυμα σφάλματος: " + errorMessage);
     }
-
-
-public void showError2() {
-
-    System.out.println("Error_2 message.")
-
-    }
-
-
-
 }

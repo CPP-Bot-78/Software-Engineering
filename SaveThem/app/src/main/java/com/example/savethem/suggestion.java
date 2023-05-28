@@ -4,15 +4,15 @@ import java.time.LocalDateTime;
 
 public class suggestion {
 
-        protected int id;
-        protected LocalDateTime dateTime;
-        protected int userId;
-        protected String userFirstName;
-    protected String userLastName;
-        protected String animalName;
-        protected String description;
-        protected String location;
-        protected String animalType;
+    private int id;
+    private LocalDateTime dateTime;
+    private int userId;
+    private String userFirstName;
+    private String userLastName;
+    private String animalName;
+    private String description;
+    private String location;
+    private String animalType;
         //shown as createEntry() in sequence diagram
         public suggestion(int id, loggedInUser user, String animalName, String description, String location, String animalType)
         {
