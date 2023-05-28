@@ -1,65 +1,42 @@
 package com.example.savethem;
 
-publicclass EmailForm {
-
-private String SenderAddress;
-private String ReceiverAddress;
-
-
-
-public showMailForm(String SenderAddress, String ReceiverAddress) {
-
-    this.String SenderAddress;
-    this.String ReceiverAddress;
+public class EmailForm
+    {
+    private String SenderAddress;
+    private String ReceiverAddress;
+    public EmailForm(String SenderAddress, String ReceiverAddress)
+    {
+    this.SenderAddress = SenderAddress;
+    this.ReceiverAddress = ReceiverAddress;
+    }
+    public void checkEmail()
+    {
 
     }
-
-
-
-
-
-public void checkEmail() {
-
-
-
-    }
-
-
-public void changeEmailAddress() {
-
+    public void changeEmailAddress()
+    {
      System.out.println("You can change your email address here.");
+    }
+    public void fillForm()
+    {
 
     }
 
 
-public void fillForm() {
-
-
-
+    public void autoFillAddress(String SenderAddress, String ReceiverAddress)
+    {
+        this.SenderAddress = SenderAddress;
+        this.ReceiverAddress = ReceiverAddress;
     }
 
 
-public void autoFillAddress(String SenderAddress, String ReceiverAddress) {
-
-    this.String SenderAddress;
-    this.String ReceiverAddress;
-
+    public void isThereText()
+    {
+        System.out.println("Write your text.");
     }
+    public String getSenderAddress() {return SenderAddress;}
+    public String getReceiverAddress() {return ReceiverAddress;}
 
-
-public void isThereText() {
-
-    System.out.println("Write your text.");
-
-    }
-
-
-public string getSenderAddress() {return SenderAddress;}
-public string getReceiverAddress() {return ReceiveAddress;}
-
-public string setSenderAddress(string SenderAddress) {this.SenderAddress=SenderAddress;} 
-public string setReceiverAddress(string ReceiverAddress) {this.ReceiverAddress=ReceiverAddress;}
-
-
-
+    public void setSenderAddress(String SenderAddress) {this.SenderAddress=SenderAddress;}
+    public void setReceiverAddress(String ReceiverAddress) {this.ReceiverAddress=ReceiverAddress;}
 }

@@ -36,4 +36,4 @@ public class EshopFragment extends Fragment
         binding = null;
     }
 }
-}
+

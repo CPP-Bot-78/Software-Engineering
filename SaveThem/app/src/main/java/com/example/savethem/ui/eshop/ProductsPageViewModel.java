@@ -8,7 +8,7 @@ public class ProductsPageViewModel extends ViewModel
 {
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ProductsPageViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }
