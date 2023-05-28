@@ -6,10 +6,20 @@ public class banking
 {
     private Method payment_method;
 
-    public static boolean pay(Method pm)
+    private int ammount = 1000; //€
+
+    public static boolean pay(Method pm,String card_id, int security_code, int expr_month, int expr_year)
     {
         super(pm);
         this.payment_method=pm;
+        if (!validateCard(card_id,security_code,expr_month,expr_year)){return false;}
+        return false;
+    }
+
+    private boolean validateCard(String card_id, int security_code, int expr_month, int expr_year)
+    {
+        if (card_id.length != 15) {return false;}
+        char[] ch = card_id.toCharArray();
         return false;
     }
 
