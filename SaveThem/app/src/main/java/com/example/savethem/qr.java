@@ -43,6 +43,10 @@ public class qr
         return result.getText();
     }
    
+    public boolean openCamera()
+    {
+        
+    }
 
     public static String getURLfromQR(String pngFilePath)
     {
