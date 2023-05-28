@@ -1,6 +1,6 @@
 package com.example.savethem;
 
-abstract class spieces
+public class spieces
 {
     protected int id;
     protected int popularity;
