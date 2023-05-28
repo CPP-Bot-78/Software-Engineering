@@ -4,7 +4,7 @@ public class cardPage
 {
     public boolean validateCard(String card_id, int security_code, int expr_month, int expr_year)
     {
-        if (card_id.length != 15) {return false;}
+        if (card_id.length() != 15) {return false;}
         char[] ch = card_id.toCharArray();
         int[] num = new int[card_id.length()];
 
