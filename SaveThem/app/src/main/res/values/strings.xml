@@ -9,6 +9,9 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_eshop">Eshop</string>
+    <string name="menu_encyclopedia">Encyclopedia</string>
+    <string name="menu_qr">QR</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_mko_list">MKO List</string>
 </resources>
