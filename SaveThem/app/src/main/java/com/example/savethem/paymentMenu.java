@@ -6,7 +6,7 @@ public class paymentMenu
 {
     private Method payment_method;
 
-    private int ammount = 1000; //€
+    private int amount = 1000; //€
 
     public static boolean payWithCard(String card_id, int security_code, int expr_month, int expr_year)
     {
@@ -16,10 +16,11 @@ public class paymentMenu
     {
         return false;
     }
-    public static int show(){
-        return this.ammount;
+    public int show()
+    {
+        return this.amount;
     }
-    public static void applyFee()
+    public void applyFee()
     {
 
     }

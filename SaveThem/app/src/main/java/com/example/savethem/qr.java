@@ -5,7 +5,7 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatReader;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.Result;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+//import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
@@ -21,7 +21,7 @@ public class qr
 {
 
     private String link;
-
+/* this code wasn't working so in order to build the app it's a comment for now
     private static String readQR(String path, String charset, Map hashMap) throws FileNotFoundException, IOException, NotFoundException
     {
         BinaryBitmap binaryBitmap = new BinaryBitmap(
@@ -35,7 +35,7 @@ public class qr
         );
  
         Result result = new MultiFormatReader().decode(binaryBitmap);
- 
+
         return result.getText();
     }
    
@@ -54,5 +54,5 @@ public class qr
         this.link = link;
         return link;
     }
- 
+ */
 }
