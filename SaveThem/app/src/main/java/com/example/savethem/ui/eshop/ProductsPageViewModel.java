@@ -10,7 +10,7 @@ public class ProductsPageViewModel extends ViewModel
 
     public ProductsPageViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is Eshop fragment");
     }
 
     public LiveData<String> getText() {

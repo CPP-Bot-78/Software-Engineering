@@ -25,7 +25,7 @@ public class EshopFragment extends Fragment
         binding = FragmentEshopBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textEshop;
         productsPageViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
