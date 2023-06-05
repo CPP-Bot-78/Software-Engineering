@@ -35,5 +35,11 @@ public class EshopFragment extends Fragment
         super.onDestroyView();
         binding = null;
     }
+
+    /*
+    private Object findViewById;
+    private int btnApply = findViewById<Button>(R.id.btnApply)
+
+     */
 }
 

@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,26 +21,29 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="374dp"
+        android:layout_width="208dp"
         android:layout_height="208dp"
-        app:srcCompat="@mipmap/deer"
-        tools:layout_editor_absoluteX="-86dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/deer" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="202dp"
         android:layout_height="207dp"
-        app:srcCompat="@mipmap/giraffe"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="3dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/giraffe" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to SaveThem app! Here you can learn about endangered species and waht you can do in order to protect them. "
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="225dp" />
+        android:layout_width="390dp"
+        android:layout_height="48dp"
+        android:text="Welcome back Hero! What is your plan on saving Nature today? "
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
