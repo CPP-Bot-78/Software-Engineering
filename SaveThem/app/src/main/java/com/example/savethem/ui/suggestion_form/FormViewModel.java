@@ -1,14 +1,12 @@
-package com.example.savethem.ui.home;
+package com.example.savethem.ui.suggestion_form;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class FormViewModel extends ViewModel {
 
-
-
-    public HomeViewModel() {
+    public FormViewModel() {
 
     }
 

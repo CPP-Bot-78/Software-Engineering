@@ -1,4 +1,4 @@
-package com.example.savethem.ui.gallery;
+package com.example.savethem.ui.qr;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.savethem.databinding.FragmentGalleryBinding;
+import com.example.savethem.databinding.FragmentQrBinding;
 
-public class GalleryFragment extends Fragment {
+public class qrFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentQrBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        qrViewModel homeViewModel =
+                new ViewModelProvider(this).get(qrViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentQrBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textQr;
         return root;
     }
 

@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="48dp"
-    android:minHeight="48dp">
+    android:minHeight="48dp"
+    tools:context=".ui.suggestion_form.FormFragment">
 
 
     <TextView
@@ -25,11 +26,13 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="442dp"
         android:layout_height="213dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Additional information"
         android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
 

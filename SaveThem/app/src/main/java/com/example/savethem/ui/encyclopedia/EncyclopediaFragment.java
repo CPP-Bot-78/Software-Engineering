@@ -1,4 +1,4 @@
-package com.example.savethem.ui.slideshow;
+package com.example.savethem.ui.encyclopedia;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,23 +9,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import com.example.savethem.databinding.FragmentEncyclopediaBinding;
+public class EncyclopediaFragment extends Fragment {
 
-import com.example.savethem.databinding.FragmentSlideshowBinding;
-
-public class SlideshowFragment extends Fragment {
-
-    private FragmentSlideshowBinding binding;
+    private FragmentEncyclopediaBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        EncyclopediaViewModel homeViewModel =
+                new ViewModelProvider(this).get(EncyclopediaViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentEncyclopediaBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textEncyclopedia;
         return root;
     }
 
