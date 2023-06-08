@@ -21,7 +21,7 @@ import com.example.savethem.ui.eshop.ProductsPageViewModel;
 public class EshopFragment extends Fragment
 {
     private FragmentEshopBinding binding;
-
+    private String selected = "all";
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         ProductsPageViewModel productsPageViewModel =
@@ -39,12 +39,10 @@ public class EshopFragment extends Fragment
         binding = null;
     }
 
-    ///*
-        int[] wishlist = new int[20];
-        int[] productId = new int[20];
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+        int[] wishlist = new int[20];
+        int[] productId = new int[20];
         super.onCreate(savedInstanceState);
         product whiteMug = new product(1,100,2,"WFF","Mug","WFF","Protect the Oceans");
         product whiteShirt = new product(2,100,10,"Arcturos","TShirt","Arcturos","Adopt an Animal");
@@ -55,9 +53,6 @@ public class EshopFragment extends Fragment
 
      //*/
     /*
-    private Object findViewById;
-    Button btnApply = findViewById(R.layout.fragment_eshop);
-
      //*/
     public void all_filter()
     {
