@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_home, R.id.nav_encyclopedia, R.id.nav_eshop, R.id.nav_mkolist, R.id.nav_eshop, R.id.nav_suggestion, R.id.nav_qr)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.mobile_navigation);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         //button for suggestion form
@@ -74,15 +74,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
         @Override
-        public boolean onCreateOptionsMenu (Menu menu){
+        public boolean onCreateOptionsMenu(Menu menu) {
             // Inflate the menu; this adds items to the action bar if it is present.
             getMenuInflater().inflate(R.menu.main, menu);
             return true;
         }
 
         @Override
-        public boolean onSupportNavigateUp () {
-            NavController navController = Navigation.findNavController(this, R.id.mobile_navigation);
+        public boolean onSupportNavigateUp() {
+            NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
             return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                     || super.onSupportNavigateUp();
         }
