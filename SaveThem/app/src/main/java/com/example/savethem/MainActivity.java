@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_home, R.id.nav_encyclopedia, R.id.nav_eshop,R.id.nav_mkolist,R.id.nav_eshop,R.id.nav_suggestion,R.id.nav_qr)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        NavController navController = Navigation.findNavController(this, R.id.mobile_navigation);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
