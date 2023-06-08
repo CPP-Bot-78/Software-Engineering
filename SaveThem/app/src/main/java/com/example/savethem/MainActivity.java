@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        int id=0; //suggestionId
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
             String inputLocation = editText2.getText().toString();
             String inputInfo = editText3.getText().toString();
             String inputType = editText4.getText().toString();
-            //suggestion(, loggedInUser user, inputName, inputInfo, inputLocation, imputType);
+            //suggestion(id, loggedInUser.getUserId(), inputName, inputInfo, inputLocation, inputType);
+            id++;
         }
     });
 
