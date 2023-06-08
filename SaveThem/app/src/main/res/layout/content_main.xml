@@ -19,42 +19,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="208dp"
-        android:layout_height="208dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/deer" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="202dp"
-        android:layout_height="207dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/giraffe" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="390dp"
-        android:layout_height="48dp"
-        android:text="Welcome back Hero! What is your plan on saving Nature today? "
-        android:textColor="@android:color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <ImageView
-        android:id="@+id/nature2imageView"
-        android:layout_width="392dp"
-        android:layout_height="277dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@mipmap/nature2" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
