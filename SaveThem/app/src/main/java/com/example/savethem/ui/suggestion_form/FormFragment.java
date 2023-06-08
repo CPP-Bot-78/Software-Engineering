@@ -29,8 +29,25 @@ public class FormFragment extends Fragment {
 
         binding = FragmentSuggestionFormBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-
+//button for suggestion form
+        /*
+        setContentView(R.layout.fragment_suggestion_form);
+        Button buttonApplySuggestion = findViewById(R.id.buttonApplySuggestion);
+        buttonApplySuggestion.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                EditText editText1 = findViewById(R.id.InsertSpeciesName);
+                EditText editText2 = findViewById(R.id.suggestionLocation);
+                EditText editText3 = findViewById(R.id.SuggestionInfo);
+                EditText editText4 = findViewById(R.id.suggestionAnimalType);
+                String inputName = editText1.getText().toString();
+                String inputLocation = editText2.getText().toString();
+                String inputInfo = editText3.getText().toString();
+                String inputType = editText4.getText().toString();
+                suggestion NewSug =new suggestion(id, currentUser, inputName, inputInfo, inputLocation, inputType);
+                id++;
+            }
+        });
+ */
 
 
         return root;
