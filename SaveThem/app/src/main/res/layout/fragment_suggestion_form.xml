@@ -23,28 +23,28 @@
         tools:text="Please enter the name and information of the species you would like us to include to our encyclopedia" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="442dp"
-        android:layout_height="213dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/SuggestionInfo"
+        android:layout_width="408dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Additional information"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/suggestionLocation" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonApplySuggestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="28dp"
         android:text="Apply"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toTopOf="@+id/SuggestionInfo" />
 
     <TextView
         android:id="@+id/textView4"
@@ -53,13 +53,13 @@
         android:layout_marginTop="84dp"
         android:text="  Purviews with '*' must be filled"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/SuggestionInfo" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/InsertSpeciesName"
         android:layout_width="210dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="Species' name*"
@@ -68,16 +68,27 @@
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextText7"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
+        android:id="@+id/suggestionLocation"
+        android:layout_width="194dp"
+        android:layout_height="52dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Living location*"
         android:inputType="text"
-        app:layout_constraintStart_toEndOf="@+id/editTextText6"
+        app:layout_constraintStart_toEndOf="@+id/InsertSpeciesName"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/suggestionAnimalType"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Animal Type"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SuggestionInfo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
