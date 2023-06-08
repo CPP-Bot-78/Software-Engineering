@@ -6,14 +6,8 @@ import androidx.lifecycle.ViewModel;
 
 public class ProductsPageViewModel extends ViewModel
 {
-    private final MutableLiveData<String> mText;
+    public ProductsPageViewModel()
+    {
 
-    public ProductsPageViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is Eshop fragment");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
     }
 }
