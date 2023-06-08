@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-    loggedInUser currentUser = new loggedInUser(001,"Kurios", "Kapoios", "Perioxi", "kurioskapoios@gmail.com","Alles pithanes plirofories");
+
     int id=0; //suggestionId
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        loggedInUser currentUser = new loggedInUser(001,"Kurios", "Kapoios", "Perioxi", "kurioskapoios@gmail.com","Alles pithanes plirofories");
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.mobile_navigation);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-   //button for suggestion form
+        //button for suggestion form
         setContentView(R.layout.fragment_suggestion_form);
         Button buttonApplySuggestion = findViewById(R.id.buttonApplySuggestion);
         buttonApplySuggestion.setOnClickListener(new View.OnClickListener() {
