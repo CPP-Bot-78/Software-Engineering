@@ -24,11 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-
+    loggedInUser currentUser = new loggedInUser(001,"Kurios", "Kapoios", "Perioxi", "kurioskapoios@gmail.com","Alles pithanes plirofories");
+    int id=0; //suggestionId
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int id=0; //suggestionId
+
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -45,45 +47,45 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_encyclopedia, R.id.nav_eshop,R.id.nav_mkolist,R.id.nav_eshop,R.id.nav_suggestion,R.id.nav_qr)
+                R.id.nav_home, R.id.nav_encyclopedia, R.id.nav_eshop, R.id.nav_mkolist, R.id.nav_eshop, R.id.nav_suggestion, R.id.nav_qr)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.mobile_navigation);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-        //theodore
+   //button for suggestion form
+        setContentView(R.layout.fragment_suggestion_form);
         Button buttonApplySuggestion = findViewById(R.id.buttonApplySuggestion);
         buttonApplySuggestion.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v) {
-            setContentView(R.layout.fragment_suggestion_form);
-            EditText editText1 = findViewById(R.id.InsertSpeciesName);
-            EditText editText2 = findViewById(R.id.suggestionLocation);
-            EditText editText3 = findViewById(R.id.SuggestionInfo);
-            EditText editText4 = findViewById(R.id.suggestionAnimalType);
-            String inputName = editText1.getText().toString();
-            String inputLocation = editText2.getText().toString();
-            String inputInfo = editText3.getText().toString();
-            String inputType = editText4.getText().toString();
-            //suggestion(id, loggedInUser.getUserId(), inputName, inputInfo, inputLocation, inputType);
-            id++;
+            public void onClick(View view) {
+                EditText editText1 = findViewById(R.id.InsertSpeciesName);
+                EditText editText2 = findViewById(R.id.suggestionLocation);
+                EditText editText3 = findViewById(R.id.SuggestionInfo);
+                EditText editText4 = findViewById(R.id.suggestionAnimalType);
+                String inputName = editText1.getText().toString();
+                String inputLocation = editText2.getText().toString();
+                String inputInfo = editText3.getText().toString();
+                String inputType = editText4.getText().toString();
+                suggestion NewSug =new suggestion(id, currentUser, inputName, inputInfo, inputLocation, inputType);
+                id++;
+            }
+        });
+
+    }
+
+        @Override
+        public boolean onCreateOptionsMenu (Menu menu){
+            // Inflate the menu; this adds items to the action bar if it is present.
+            getMenuInflater().inflate(R.menu.main, menu);
+            return true;
         }
-    });
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+        @Override
+        public boolean onSupportNavigateUp () {
+            NavController navController = Navigation.findNavController(this, R.id.mobile_navigation);
+            return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+                    || super.onSupportNavigateUp();
+        }
 
 
 }

@@ -1,5 +1,7 @@
 package com.example.savethem;
 
+import android.os.Build;
+
 import java.time.LocalDateTime;
 
 public class suggestion {
@@ -17,7 +19,9 @@ public class suggestion {
         public suggestion(int id, loggedInUser user, String animalName, String description, String location, String animalType)
         {
             this.id=id;
-            this.dateTime= LocalDateTime.now();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                this.dateTime= LocalDateTime.now();
+            }
             this.userId=user.getUserId();
             this.userFirstName=user.getUserFirstName();
             this.userLastName=user.getUserLastName();

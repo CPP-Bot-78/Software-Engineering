@@ -17,8 +17,8 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="Search Specific Species"
         android:inputType="text"
