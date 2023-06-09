@@ -12,14 +12,32 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.savethem.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_encyclopedia"
+        android:name="com.example.savethem.ui.encyclopedia.EncyclopediaFragment"
+        android:label="@string/menu_encyclopedia"
+        tools:layout="@layout/fragment_encuclopedia" />
+
+    <fragment
+        android:id="@+id/nav_mkolist"
+        android:name="com.example.savethem.ui.mko_list.MKO_listFragment"
+        android:label="@string/menu_mko_list"
+        tools:layout="@layout/fragment_mko_list" />
 
     <fragment
         android:id="@+id/nav_eshop"
         android:name="com.example.savethem.ui.eshop.EshopFragment"
         android:label="@string/menu_eshop"
         tools:layout="@layout/fragment_eshop" />
+
+    <fragment
+        android:id="@+id/nav_suggestion"
+        android:name="com.example.savethem.ui.suggestion_form.FormFragment"
+        android:label="@string/menu_suggestion_form"
+        tools:layout="@layout/fragment_suggestion_form" />
+
+    <fragment
+        android:id="@+id/nav_qr"
+        android:name="com.example.savethem.ui.qr.qrFragment"
+        android:label="@string/menu_qr"
+        tools:layout="@layout/fragment_qr" />
 </navigation>
