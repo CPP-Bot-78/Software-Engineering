@@ -26,7 +26,6 @@
         android:id="@+id/SuggestionInfo"
         android:layout_width="408dp"
         android:layout_height="204dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Additional information"
@@ -34,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/suggestionLocation" />
+        tools:layout_editor_absoluteY="116dp" />
 
     <Button
         android:id="@+id/buttonApplySuggestion"

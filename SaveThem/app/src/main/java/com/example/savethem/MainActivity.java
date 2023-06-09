@@ -25,12 +25,11 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
-    int id=0; //suggestionId
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        loggedInUser currentUser = new loggedInUser(001,"Kurios", "Kapoios", "Perioxi", "kurioskapoios@gmail.com","Alles pithanes plirofories");
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 id++;
             }
         });
- */
+        */
     }
 
         @Override

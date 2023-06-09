@@ -10,10 +10,12 @@ import android.widget.TextView;
 
 import com.example.savethem.MainActivity;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.savethem.R;
+import com.example.savethem.databinding.FragmentQrBinding;
 import com.example.savethem.databinding.FragmentSuggestionFormBinding;
 import com.example.savethem.loggedInUser;
 import com.example.savethem.suggestion;
@@ -21,24 +23,30 @@ import com.example.savethem.suggestion;
 public class FormFragment extends Fragment {
 
     private FragmentSuggestionFormBinding binding;
+    int id=0; //suggestionId
+    private EditText editText1;
+    private EditText editText2;
+    private EditText editText3;
+    private EditText editText4;
+    loggedInUser currentUser = new loggedInUser(001,"Kurios", "Kapoios", "Perioxi", "kurioskapoios@gmail.com","Alles pithanes plirofories");
+
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        FormViewModel homeViewModel =
-                new ViewModelProvider(this).get(FormViewModel.class);
+
+        View rootView = inflater.inflate(R.layout.fragment_suggestion_form, container, false);
 
         binding = FragmentSuggestionFormBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-//button for suggestion form
-        /*
-        setContentView(R.layout.fragment_suggestion_form);
-        Button buttonApplySuggestion = findViewById(R.id.buttonApplySuggestion);
+        //button for suggestion form
+        Button buttonApplySuggestion = rootView.findViewById(R.id.buttonApplySuggestion);
         buttonApplySuggestion.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                EditText editText1 = findViewById(R.id.InsertSpeciesName);
-                EditText editText2 = findViewById(R.id.suggestionLocation);
-                EditText editText3 = findViewById(R.id.SuggestionInfo);
-                EditText editText4 = findViewById(R.id.suggestionAnimalType);
+                editText1 = rootView.findViewById(R.id.InsertSpeciesName);
+                editText2 = rootView.findViewById(R.id.suggestionLocation);
+                editText3 = rootView.findViewById(R.id.SuggestionInfo);
+                editText4 = rootView.findViewById(R.id.suggestionAnimalType);
                 String inputName = editText1.getText().toString();
                 String inputLocation = editText2.getText().toString();
                 String inputInfo = editText3.getText().toString();
@@ -47,18 +55,17 @@ public class FormFragment extends Fragment {
                 id++;
             }
         });
- */
 
 
-        return root;
+
+        return rootView;
     }
-
 
 
         @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+         binding= null;
     }
 }
 
