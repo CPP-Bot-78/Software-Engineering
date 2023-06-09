@@ -8,9 +8,9 @@ public class tshirt extends product
     private Size size;
     private Sex sex;
 
-    public tshirt(int id,int stock,int price,String productedBy,String type,String mko,String slogan,String color,Size size,Sex sex)
+    public tshirt(String name, int id,int stock,int price,String productedBy,String type,String mko,String slogan,String color,Size size,Sex sex,int image)
     {
-        super(id,stock,price,productedBy,type,mko,slogan);
+        super(name,id,stock,price,productedBy,type,mko,slogan,image);
         this.color=color;
         this.size=size;
         this.sex=sex;

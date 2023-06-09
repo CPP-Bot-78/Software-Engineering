@@ -6,9 +6,9 @@ public class mug extends product
     private int cupSize;
     private String mugType;
 
-    public mug(int id,int stock,int price,String productedBy,String type,String mko,String slogan,String color,String slogun,int cupSize,String mugType)
+    public mug(String name,int id,int stock,int price,String productedBy,String type,String mko,String slogan,String color,String slogun,int cupSize,String mugType,int image)
     {
-        super(id, stock, price, productedBy, type, mko,slogan);
+        super(name, id, stock, price, productedBy, type, mko,slogan,image);
         this.color = color;
         this.cupSize = cupSize;
         this.mugType = mugType;

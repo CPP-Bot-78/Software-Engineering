@@ -3,7 +3,7 @@ package com.example.savethem;
 public class eshop
 {
     private int[] wishList = new int[20]; // product id will be added
-    private int[] productId = new int[20];
+    private static int[] productId = new int[20];
     private int w_index=0;
     private int p_index=0;
     public eshop(int[] productId,int[] wishList)
@@ -17,7 +17,8 @@ public class eshop
         System.out.println("Stock is updated!");
     }
     //getters
-    public int[] getProductId() { return productId; }
+    public static int getProductId(int i) { return productId[i]; }
+    public static int[] getAllProductIds() { return productId; }
     public int[] getWishlist() { return wishList; }
     //setters
     public void addWishListItem(int product)

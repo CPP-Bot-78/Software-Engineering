@@ -1,4 +1,4 @@
-package com.example.savethem.ui.eshop;
+package com.example.savethem.ui.productspage;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
