@@ -35,7 +35,7 @@ public class suggestion {
 
         public void sendToAdmin()
         {
-            System.out.println("Η πρότασης σας έχει σταλεί στους υπευθύνους της εγκυκλοπαίδειας");
+            System.out.println("Your suggestion has been submitted");
         }
 
 }
