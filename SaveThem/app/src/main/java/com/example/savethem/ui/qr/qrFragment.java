@@ -2,6 +2,7 @@ package com.example.savethem.ui.qr;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.widget.Button;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -27,7 +28,14 @@ public class qrFragment extends Fragment {
         final TextView textView = binding.textQr;
         return root;
     }
-
+    /*
+    Button button = (Button) findViewById(R.id.supabutton);
+    button.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View v) {
+            Log.d("BUTTONS", "User tapped the Supabutton");
+        }
+    });
+    */
     @Override
     public void onDestroyView() {
         super.onDestroyView();

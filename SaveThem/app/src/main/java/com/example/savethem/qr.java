@@ -14,10 +14,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import android.content.Intent;
+import android.app.Activity;
+
 
 //import javax.imageio.ImageIO;
 
-public class qr
+public class qr extends Activity
 {
 
     private String link;
@@ -39,9 +42,11 @@ public class qr
         return result.getText();
     }
     */
-    public boolean openCamera()
+    public void openCamera()
     {
-        return false;
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        startActivity(intent);
+
     }
 
     public String getURLfromQR(String pngFilePath) throws NotFoundException, IOException {
