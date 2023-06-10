@@ -13,8 +13,12 @@
         android:fontFamily="casual"
         android:text="Καμιλοπάρδαλη"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
 
     <TextView
         android:id="@+id/text_encyclopedia"
@@ -39,16 +43,24 @@
         android:layout_width="162dp"
         android:layout_height="157dp"
         android:src="@mipmap/deer"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="63dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="154dp"
         android:layout_height="140dp"
         android:src="@mipmap/giraffe"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="245dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
 
     <TextView
         android:id="@+id/textView8"
@@ -57,6 +69,10 @@
         android:fontFamily="casual"
         android:text="Αντιλόπη"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
 </androidx.constraintlayout.widget.ConstraintLayout>
