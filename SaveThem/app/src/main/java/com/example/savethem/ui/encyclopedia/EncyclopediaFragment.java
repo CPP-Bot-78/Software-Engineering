@@ -21,8 +21,6 @@ public class EncyclopediaFragment extends Fragment {
 
         binding = FragmentEncyclopediaBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textEncyclopedia;
         return root;
     }
 
