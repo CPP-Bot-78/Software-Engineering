@@ -20,7 +20,11 @@ public class speciesList {
     {
 
     }
-    public void searchList()
+    public void removeFilter()
+    {
+
+    }
+    public void searchedList()
     {
 
     }

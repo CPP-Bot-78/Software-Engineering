@@ -11,5 +11,8 @@ public class suggestionForm {
         this.enteredLocation=enteredLocation;
         this.enteredDescription=enteredDescription;
     }
+    public void createEntry()
+    {
 
+    }
 }

@@ -9,9 +9,9 @@ public class EmailForm
     this.SenderAddress = SenderAddress;
     this.ReceiverAddress = ReceiverAddress;
     }
-    public void checkEmail()
+    public boolean checkEmail(String email)
     {
-
+        return true;
     }
     public void changeEmailAddress()
     {

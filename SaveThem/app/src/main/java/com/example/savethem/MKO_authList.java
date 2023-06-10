@@ -19,11 +19,17 @@ public MKO_authList(String MKO_Name,int MKO_Code,int[] MKO_List)
     {
         System.out.println("Content loaded.");
     }
+    public void loadMKOInfo(){}
+    public void showMailForm()
+    {
+        EmailForm emailForm = new EmailForm("example@freecodecamp.org","me@me.com");
+    }
     public String getMKO_Name() {return MKO_Name;}
     public int getMKO_Code() {return MKO_Code;}
     public int[] getMKO_List() {return MKO_List;}
     public void setMKO_Name() {this.MKO_Name=MKO_Name;}
     public void setMKO_Code() {this.MKO_Code=MKO_Code;}
     public void setMKO_List() {this.MKO_List=MKO_List;}
+
 }
 

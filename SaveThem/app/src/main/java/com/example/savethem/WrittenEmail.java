@@ -2,7 +2,10 @@ package com.example.savethem;
 
 public class WrittenEmail
 {
+    public WrittenEmail()
+    {
 
+    }
     public void createEmail()
     {
 

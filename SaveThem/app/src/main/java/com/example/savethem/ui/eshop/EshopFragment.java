@@ -74,6 +74,10 @@ public class EshopFragment extends Fragment
     {
 
     }
+    public void addToWishlist()
+    {
+
+    }
 
 }
 
