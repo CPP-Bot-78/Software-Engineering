@@ -11,8 +11,10 @@ public class newNoticeEntry {
     private String userFirstName;
     private String userLastName;
 
+    private String location;
+
     //shown as createEntry() in sequence diagram
-    public newNoticeEntry(int id, loggedInUser user)
+    public newNoticeEntry(int id, loggedInUser user, String location)
     {
         this.id=id;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -21,6 +23,7 @@ public class newNoticeEntry {
         this.userId=user.getUserId();
         this.userFirstName=user.getUserFirstName();
         this.userLastName=user.getUserLastName();
+        this.location=location;
 
     }
 

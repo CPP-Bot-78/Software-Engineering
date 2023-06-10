@@ -21,8 +21,8 @@ public class qr
 {
 
     private String link;
-/* this code wasn't working so in order to build the app it's a comment for now
-    private static String readQR(String path, String charset, Map hashMap) throws FileNotFoundException, IOException, NotFoundException
+    // this code wasn't working so in order to build the app it's a comment for now
+    /*private static String readQR(String path, String charset, Map hashMap) throws FileNotFoundException, IOException, NotFoundException
     {
         BinaryBitmap binaryBitmap = new BinaryBitmap(
             new HybridBinarizer(
@@ -38,21 +38,19 @@ public class qr
 
         return result.getText();
     }
-   
+    */
     public boolean openCamera()
     {
         return false;
     }
 
-    public static String getURLfromQR(String pngFilePath)
-    {
+    public String getURLfromQR(String pngFilePath) throws NotFoundException, IOException {
         String examplePngFilePath = "C:/folder/file.png";
         String charset = "UTF-8";
         Map<EncodeHintType, ErrorCorrectionLevel> hashMap = new HashMap<EncodeHintType,ErrorCorrectionLevel>();
         hashMap.put(EncodeHintType.ERROR_CORRECTION,ErrorCorrectionLevel.L);
-        String link = readQR(pngFilePath, charset, hashMap);
-        this.link = link;
-        return link;
+        //this.link = this.readQR(pngFilePath, charset, hashMap);
+
+        return this.link;
     }
- */
 }
