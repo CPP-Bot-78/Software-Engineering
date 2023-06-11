@@ -11,9 +11,10 @@ public class photoItem {
         private int userId;
         private String userFirstName;
         private String userLastName;
+        private String photoPath;
 
         //shown as autoSetPickInfo() in sequence diagram
-        public photoItem(int id, loggedInUser user)
+        public photoItem(int id, loggedInUser user, String photoPath)
         {
             this.id=id;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -22,10 +23,11 @@ public class photoItem {
             this.userId=user.getUserId();
             this.userFirstName=user.getUserFirstName();
             this.userLastName=user.getUserLastName();
-
+            this.photoPath=photoPath;
         }
 
     public int getId() {return id;}
     public int getUserId(){return userId;}
+    public String getPhotoPath(){return photoPath;}
 }
 

@@ -13,8 +13,10 @@ public class newNoticeEntry {
 
     private String location;
 
+    private photoItem entryPhoto;
+
     //shown as createEntry() in sequence diagram
-    public newNoticeEntry(int id, loggedInUser user, String location)
+    public newNoticeEntry(int id, loggedInUser user, String location, photoItem entryPhoto)
     {
         this.id=id;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -24,7 +26,7 @@ public class newNoticeEntry {
         this.userFirstName=user.getUserFirstName();
         this.userLastName=user.getUserLastName();
         this.location=location;
-
+        this.entryPhoto=entryPhoto;
     }
 
     public int getId() {return id;}
