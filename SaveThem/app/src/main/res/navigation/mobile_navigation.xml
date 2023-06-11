@@ -43,6 +43,6 @@
     <fragment
         android:id="@+id/nav_report"
         android:name="com.example.savethem.ui.animal_noticed.animalFragment"
-        android:label="@string/menu_qr"
-        tools:layout="@layout/fragment_qr" />
+        android:label="@string/menu_report_animal"
+        tools:layout="@layout/report_animal_found" />
 </navigation>
