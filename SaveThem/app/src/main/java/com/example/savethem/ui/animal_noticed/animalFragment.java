@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+
 import com.example.savethem.databinding.ReportAnimalFoundBinding;
-import com.example.savethem.ui.animal_noticed.animalViewModel;
 
 public class animalFragment extends Fragment {
 
