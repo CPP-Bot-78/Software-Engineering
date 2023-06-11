@@ -21,8 +21,8 @@ public class EshopFragment extends Fragment
     private String selected = "all";
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ProductsPageViewModel productsPageViewModel =
-                new ViewModelProvider(this).get(ProductsPageViewModel.class);
+        EshopViewModel eshopViewModel =
+                new ViewModelProvider(this).get(EshopViewModel.class);
 
         binding = FragmentEshopBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -35,18 +35,6 @@ public class EshopFragment extends Fragment
         super.onDestroyView();
         binding = null;
     }
-    public void all_filter()
-    {
-        System.out.println("I worked");
-    }
-    public void mug_filter()
-    {
-        System.out.println("I worked");
-    }
-    public void tshirt_filter()
-    {
-        System.out.println("I worked");
-    }
     public void showFilteredShop()
     {
         int[] wishlist = new int[20];
@@ -58,11 +46,11 @@ public class EshopFragment extends Fragment
         Eshop.setProductId(2); //productId[1]=2, whiteShirt
         Eshop.setProductId(2); //productId[1]=2, whiteShirt
     }
-    public void buyProduct()
+    public void buyProduct(View view)
     {
         System.out.println("I worked");
     }
-    public void addToWishlist()
+    public void addToWishlist(View view)
     {
         System.out.println("I worked");
     }

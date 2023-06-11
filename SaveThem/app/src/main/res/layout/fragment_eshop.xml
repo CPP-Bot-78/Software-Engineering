@@ -28,7 +28,6 @@
         android:id="@+id/eshop_all_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="all_filter"
         android:text="All"
         app:layout_constraintEnd_toStartOf="@+id/eshop_tshirt_button"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +36,6 @@
         android:id="@+id/eshop_mug_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="mug_filter"
         android:text="Mug"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +44,6 @@
         android:id="@+id/eshop_tshirt_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="tshirt_filter"
         android:text="T-Shirt"
         app:layout_constraintEnd_toStartOf="@+id/eshop_mug_button"
         app:layout_constraintTop_toTopOf="parent" />

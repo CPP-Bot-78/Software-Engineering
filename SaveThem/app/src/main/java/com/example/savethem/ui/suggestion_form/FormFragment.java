@@ -23,7 +23,7 @@ import com.example.savethem.suggestion;
 public class FormFragment extends Fragment {
 
     private FragmentSuggestionFormBinding binding;
-    int id=0; //suggestionId
+    private int id=0; //suggestionId
     private EditText editText1;
     private EditText editText2;
     private EditText editText3;

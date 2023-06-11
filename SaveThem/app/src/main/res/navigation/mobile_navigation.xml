@@ -15,7 +15,7 @@
         android:id="@+id/nav_encyclopedia"
         android:name="com.example.savethem.ui.encyclopedia.EncyclopediaFragment"
         android:label="@string/menu_encyclopedia"
-        tools:layout="@layout/fragment_encuclopedia" />
+        tools:layout="@layout/fragment_encyclopedia" />
 
     <fragment
         android:id="@+id/nav_mkolist"
@@ -38,6 +38,11 @@
     <fragment
         android:id="@+id/nav_qr"
         android:name="com.example.savethem.ui.qr.qrFragment"
+        android:label="@string/menu_qr"
+        tools:layout="@layout/fragment_qr" />
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.example.savethem.ui.animal_noticed.animalFragment"
         android:label="@string/menu_qr"
         tools:layout="@layout/fragment_qr" />
 </navigation>
