@@ -35,29 +35,17 @@ public class EshopFragment extends Fragment
         super.onDestroyView();
         binding = null;
     }
-
-      /*  @Override
-        public void onCreate(@Nullable Bundle savedInstanceState) {
-        int[] wishlist = new int[20];
-        int[] productId = new int[20];
-        super.onCreate(savedInstanceState);
-        product whiteMug = new product("white Mug", 1, 100, 2, "WFF", "Mug", "WFF", "Protect the Oceans", R.drawable.mug);
-        product whiteShirt = new product("white T-Shirt", 2, 100, 10, "Arcturos", "TShirt", "Arcturos", "Adopt an Animal", R.drawable.tshirt);
-        eshop Eshop = new eshop(productId,wishlist);
-        Eshop.setProductId(1); //productId[0]=1, whiteMug
-        Eshop.setProductId(2); //productId[1]=2, whiteShirt
-    }*/
     public void all_filter()
     {
-
+        System.out.println("I worked");
     }
     public void mug_filter()
     {
-
+        System.out.println("I worked");
     }
     public void tshirt_filter()
     {
-
+        System.out.println("I worked");
     }
     public void showFilteredShop()
     {
@@ -72,12 +60,26 @@ public class EshopFragment extends Fragment
     }
     public void buyProduct()
     {
-
+        System.out.println("I worked");
     }
     public void addToWishlist()
     {
-
+        System.out.println("I worked");
     }
 
+    public void all_filter(View view)
+    {
+        System.out.println("I worked");
+    }
+
+    public void tshirt_filter(View view)
+    {
+        System.out.println("I worked");
+    }
+
+    public void mug_filter(View view)
+    {
+        System.out.println("I worked");
+    }
 }
 

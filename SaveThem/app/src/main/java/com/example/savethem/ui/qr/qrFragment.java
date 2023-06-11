@@ -25,7 +25,6 @@ public class qrFragment extends Fragment {
         binding = FragmentQrBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textQr;
         return root;
     }
     /*

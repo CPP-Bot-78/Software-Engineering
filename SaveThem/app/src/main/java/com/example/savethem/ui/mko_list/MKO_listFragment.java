@@ -23,8 +23,6 @@ public class MKO_listFragment extends Fragment {
 
         binding = FragmentMkoListBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textMkoList;
         return root;
     }
 
