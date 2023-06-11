@@ -5,21 +5,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/fragment_encyclopedia"
-        android:layout_width="412dp"
-        android:layout_height="586dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:text="Switch"
+        app:layout_constraintStart_toEndOf="@+id/switch5"
+        app:layout_constraintTop_toTopOf="@+id/switch5" />
+
+    <Switch
+        android:id="@+id/switch11"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:text="Switch"
+        app:layout_constraintStart_toEndOf="@+id/switch5"
+        app:layout_constraintTop_toTopOf="@+id/switch5" />
+
+    <Switch
+        android:id="@+id/switch13"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="152dp"
+        android:text="Switch"
+        app:layout_constraintStart_toEndOf="@+id/switch5"
+        app:layout_constraintTop_toTopOf="@+id/switch5" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Switch
+        android:id="@+id/switch10"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="100dp"
+        android:text="Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Switch
+        android:id="@+id/switch12"
+        android:layout_width="138dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="176dp"
+        android:text="Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:text="Filters:"
+        android:textAllCaps="true"
+        android:textColor="#228A22"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="309dp"
-        android:layout_height="285dp"
-        app:layout_constraintBottom_toBottomOf="@+id/include"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="62dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="16dp"
+        android:text="OK"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/switch13" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
